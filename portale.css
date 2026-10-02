@@ -43,3 +43,6 @@ body{-webkit-user-select:text;user-select:text}
 }
 .pt-login .al{margin-top:6vh}
 .pt-login .pt-brand{margin-bottom:4px}
+
+/* versione e copyright in chiaro anche nella pagina di accesso (dalla 1.2.3) */
+.pt-login .legal{margin:14px 0 0;text-align:center;color:var(--muted);font-size:12.5px}
