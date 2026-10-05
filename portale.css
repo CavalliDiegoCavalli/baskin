@@ -62,3 +62,40 @@ body{-webkit-user-select:text;user-select:text}
 
 /* versione e copyright in chiaro anche nella pagina di accesso (dalla 1.2.3) */
 .pt-login .legal{margin:14px 0 0;text-align:center;color:var(--muted);font-size:12.5px}
+
+/* Utenti (dalla 1.6.0): stessa tabella del menu Utenti di Baskin Platform (platform.css), con le soglie spostate della barra laterale */
+.ufilt{display:flex;flex-wrap:wrap;gap:8px}
+.ufb{height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.ufb b{color:var(--ink);margin-left:2px}
+.ufb[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.ufb[aria-pressed="true"] b{color:var(--surface)}
+.utab{padding:0;overflow:hidden}
+.urow{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;padding:14px 16px;border-top:1px solid var(--line);align-items:start}
+.urow:first-child{border-top:0}
+.uhead{display:none}
+.uc{display:flex;flex-direction:column;gap:3px;min-width:0;overflow-wrap:anywhere}
+.ue,.ur,.ua{grid-column:1/-1}
+.ue a{color:inherit}
+.ulb{font-size:11.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.uchips{display:flex;flex-wrap:wrap;gap:5px}
+.uc>.chip{align-self:flex-start}
+.ua{flex-direction:row;flex-wrap:wrap;gap:8px;align-items:center}
+.ua .btn{min-height:40px}
+.udel{color:var(--crit)}
+@media (min-width:600px) and (max-width:1399px){.urow{grid-template-columns:1fr 1fr 1fr 1fr}.ue{grid-column:span 2}.ur,.us{grid-column:span 2}.ua{grid-column:1/-1}}
+@media (min-width:1400px){
+  .urow{grid-template-columns:minmax(80px,1fr) minmax(80px,1fr) minmax(170px,1.8fr) minmax(110px,1.2fr) 130px 300px;align-items:center}
+  .uhead{display:grid;background:var(--sunk);font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:10px 16px}
+  .ue,.ur,.ua{grid-column:auto}
+  .uc .ulb{display:none}
+  .ua{justify-content:flex-end}
+}
+.rolepick{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.rolepick legend{font-size:12.5px;color:var(--muted);font-weight:700;margin-bottom:6px;padding:0}
+.rp{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:var(--surface);cursor:pointer}
+.rp input{width:22px;height:22px;flex:none;margin:1px 0 0;accent-color:var(--brand,#EE8F1C)}
+.rp span{display:flex;flex-direction:column;gap:3px;line-height:1.35}
+.rp b{font-size:16px}.rp small{color:var(--muted)}
+.rp:has(input:checked){border-color:var(--brand,#EE8F1C);background:var(--brand-soft,#FDF1E2)}
+.pt-main .adm>.ov{max-width:none}
+.ov .sheet.center{align-self:center}
