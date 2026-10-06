@@ -5,32 +5,32 @@ body{-webkit-user-select:text;user-select:text}
 #app{padding:0}
 #app>.pt,#app>.pt-login{flex:1;min-height:0}
 .pt{display:grid;grid-template-columns:252px minmax(0,1fr)}
-.pt-side{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px;padding:18px 14px;min-height:0;overflow:hidden}
+.pt-side{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:10px;padding:12px 12px;min-height:0;overflow:hidden}
 /* intestazione (logo) e piede (utenza) fissi; scorre solo la parte in mezzo (dalla 1.4.0) */
-.pt-scroll{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:18px;margin:0 -6px;padding:0 6px;overscroll-behavior:contain}
+.pt-scroll{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:6px;margin:0 -6px;padding:0 6px;overscroll-behavior:contain}
 .pt-brand{display:flex;align-items:center;gap:10px;flex:none}
-.pt-brand img{width:40px;height:40px;object-fit:contain}
+.pt-brand img{width:34px;height:34px;object-fit:contain}
 .pt-brand div{display:flex;flex-direction:column;line-height:1.15}
-.pt-brand b{font-size:16px}.pt-brand small{color:var(--muted);font-size:12.5px}
+.pt-brand b{font-size:15px}.pt-brand small{color:var(--muted);font-size:12px}
 .pt-nav{display:flex;flex-direction:column;gap:2px}
-.pt-gl{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:12px 10px 6px}
-.pt-nav button{border:0;background:none;text-align:left;height:40px;padding:0 12px;border-radius:9px;font-weight:700;font-size:14.5px;color:var(--ink)}
+.pt-gl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:9px 10px 3px}
+.pt-nav button{border:0;background:none;text-align:left;height:32px;padding:0 12px;border-radius:8px;font-weight:700;font-size:14px;color:var(--ink)}
 .pt-nav button:hover{background:var(--sunk)}
 .pt-nav button[aria-current="true"]{background:var(--ink);color:var(--surface)}
-.pt-me{flex:none;display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:14px;min-width:0}
+.pt-me{flex:none;display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:10px;min-width:0}
 .pt-me .grow{min-width:0;display:flex;flex-direction:column;line-height:1.2}
 .pt-me b{font-size:14px}.pt-me small{color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pt-me .btn{height:36px;padding:0 10px;font-size:13.5px}
+.pt-me .btn{height:32px;padding:0 10px;font-size:13.5px}
 /* Selezione dati (dalla 1.3.0): piattaforma, periodo e dati aggiuntivi, nella barra laterale prima delle metriche */
-.pt-sel{display:flex;flex-direction:column;gap:8px}
+.pt-sel{display:flex;flex-direction:column;gap:5px}
 .pt-sel .pt-gl{padding:4px 10px 0}
-.pt-f{display:flex;flex-direction:column;gap:4px;padding:0 4px}
-.pt-f span{font-size:12.5px;font-weight:700;color:var(--muted)}
-.pt-f select{width:100%;height:40px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;padding:0 8px}
-.pt-tg{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:13.5px;line-height:1.3;padding:2px 4px}
-.pt-tg input{width:18px;height:18px;flex:none;margin:0}
-.pt-sel small{color:var(--muted);font-size:12px;line-height:1.35;padding:0 4px}
-.avatar.sm{width:36px;height:36px;font-size:15px}
+.pt-f{display:flex;flex-direction:column;gap:2px;padding:0 4px}
+.pt-f span{font-size:12px;font-weight:700;color:var(--muted)}
+.pt-f select{width:100%;height:40px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font:inherit;font-size:14px;font-weight:700;padding:0 8px;height:34px}
+.pt-tg{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:13px;line-height:1.3;padding:1px 4px}
+.pt-tg input{width:16px;height:16px;flex:none;margin:0}
+.pt-sel small{color:var(--muted);font-size:11.5px;line-height:1.3;padding:0 4px}
+.avatar.sm{width:32px;height:32px;font-size:14px}
 .pt-main{display:flex;flex-direction:column;min-width:0;min-height:0}
 .pt-head{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line);background:var(--surface)}
 .pt-head h1{font-family:var(--display);font-size:28px;margin:0;line-height:1}
