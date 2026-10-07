@@ -1,4 +1,4 @@
-/* Referto Baskin · portale admin. Copyright (c) 2026 Diego Cavalli. Tutti i diritti riservati.
+/* Basketin Platform · portale admin. Copyright (c) 2026 Diego Cavalli. Tutti i diritti riservati.
    Si appoggia a styles.css dell'app (colori, pulsanti, card, campi) e a questo guscio: menu laterale
    sullo schermo del computer, barra in alto sugli schermi stretti. */
 body{-webkit-user-select:text;user-select:text}
@@ -33,7 +33,7 @@ body{-webkit-user-select:text;user-select:text}
 .avatar.sm{width:32px;height:32px;font-size:14px}
 .pt-main{display:flex;flex-direction:column;min-width:0;min-height:0}
 .pt-head{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line);background:var(--surface)}
-.pt-head h1{font-family:var(--display);font-size:28px;margin:0;line-height:1}
+.pt-head h1{font-family:var(--display);font-stretch:var(--display-w);font-size:28px;margin:0;line-height:1}
 .pt-main .adm{flex:1;min-height:0}
 .pt-main .adm>*{width:100%;max-width:1480px;margin-left:auto;margin-right:auto}
 .pt-foot{padding:8px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);background:var(--surface)}
@@ -63,7 +63,7 @@ body{-webkit-user-select:text;user-select:text}
 /* versione e copyright in chiaro anche nella pagina di accesso (dalla 1.2.3) */
 .pt-login .legal{margin:14px 0 0;text-align:center;color:var(--muted);font-size:12.5px}
 
-/* Utenti (dalla 1.6.0): stessa tabella del menu Utenti di Baskin Platform (platform.css), con le soglie spostate della barra laterale */
+/* Utenti (dalla 1.6.0): stessa tabella del menu Utenti di Basketin Platform (platform.css), con le soglie spostate della barra laterale */
 .ufilt{display:flex;flex-wrap:wrap;gap:8px}
 .ufb{height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
 .ufb b{color:var(--ink);margin-left:2px}
@@ -96,6 +96,11 @@ body{-webkit-user-select:text;user-select:text}
 .rp input{width:22px;height:22px;flex:none;margin:1px 0 0;accent-color:var(--brand,#EE8F1C)}
 .rp span{display:flex;flex-direction:column;gap:3px;line-height:1.35}
 .rp b{font-size:16px}.rp small{color:var(--muted)}
-.rp:has(input:checked){border-color:var(--brand,#EE8F1C);background:var(--brand-soft,#FDF1E2)}
+.rp:has(input:checked){border-color:var(--brand,#EE8F1C);background:var(--primary-soft)}
 .pt-main .adm>.ov{max-width:none}
 .ov .sheet.center{align-self:center}
+
+/* ===== Design system Basketin (dal 2026-10-07): portale admin ===== */
+.pt-nav button[aria-current="true"]{background:var(--primary);color:#fff}
+.pt-nav button:hover:not([aria-current="true"]){background:var(--primary-soft)}
+.pt-f select{border-radius:12px;border-width:1.5px}
