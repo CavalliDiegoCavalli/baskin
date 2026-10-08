@@ -104,3 +104,4 @@ body{-webkit-user-select:text;user-select:text}
 .pt-nav button[aria-current="true"]{background:var(--primary);color:#fff}
 .pt-nav button:hover:not([aria-current="true"]){background:var(--primary-soft)}
 .pt-f select{border-radius:12px;border-width:1.5px}
+.umut{color:var(--muted);font-size:12.5px}   /* note del menu Utenti (motore comune con la Platform, dalla 1.18.0) */
